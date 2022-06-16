@@ -1,5 +1,5 @@
 import languages.Language;
-import numberToWordsConverter.NumTranslator;
+import translator.NumTranslator;
 
 import java.util.Scanner;
 

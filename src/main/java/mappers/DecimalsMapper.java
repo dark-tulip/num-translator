@@ -1,7 +1,5 @@
 package mappers;
 
-import numberToWordsConverter.ThreeDigitsBlock;
-
 import java.util.HashMap;
 
 public class DecimalsMapper {

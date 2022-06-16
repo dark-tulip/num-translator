@@ -1,4 +1,4 @@
-package numberToWordsConverter;
+package mappers;
 
 import languages.Language;
 import mappers.BlockPosition;

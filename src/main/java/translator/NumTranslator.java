@@ -1,7 +1,8 @@
-package numberToWordsConverter;
+package translator;
 
 import languages.Language;
 import mappers.BlockPosition;
+import mappers.ThreeDigitsBlock;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
