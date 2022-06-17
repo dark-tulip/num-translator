@@ -1,7 +1,6 @@
 package translator;
 
 import languages.Language;
-import mappers.BlockPosition;
 import mappers.ThreeDigitsBlock;
 
 import java.text.NumberFormat;
@@ -24,7 +23,7 @@ public class NumTranslator {
   public String translate(long number) {
 
     if (number == 0) {
-      return new ThreeDigitsBlock(0, this.language, new BlockPosition(0, this.language, 0)).toWords();
+      return new ThreeDigitsBlock(0, this.language, 0).toWords();
     }
 
     String[] numberBlocks = splitByThreeDigits(number);
@@ -39,7 +38,7 @@ public class NumTranslator {
       int threeDigits = Integer.parseInt(numberBlocks[i]);
 
       if (threeDigits > 0) {
-        BlockPosition position = new BlockPosition(numberBlocks.length - i - 1, language, threeDigits);  // передаем число для правильной вставки окончаний
+        int position = numberBlocks.length - i - 1;
         ThreeDigitsBlock block = new ThreeDigitsBlock(threeDigits, language, position);
         result.add(block.toWords());
       }

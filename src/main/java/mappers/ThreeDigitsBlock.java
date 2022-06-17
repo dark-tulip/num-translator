@@ -24,13 +24,13 @@ public class ThreeDigitsBlock {
   int decimals;
   int units;
 
-  public ThreeDigitsBlock(int number, Language language, BlockPosition blockPosition) {
+  public ThreeDigitsBlock(int number, Language language, int position) {
     this.hundreds = number / 100 > 0 ? number / 100 : 0;
     this.decimals = number / 10 % 10 > 0 ? number / 10 % 10 : 0;
     this.units = number % 10 > 0 ? number % 10 : 0;
 
     this.language = language;
-    this.blockPosition = blockPosition;
+    this.blockPosition = new BlockPosition(position, language, number);
 
     this.mapper =
       language.toString().equalsIgnoreCase("kaz") ? new KazBlockMapper()
