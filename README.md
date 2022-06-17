@@ -9,8 +9,8 @@
 * Латинский Казахский 
 * Английский
 
-#### Call the function:
-Call the instance of class ``` Three digits block manager ``` by function ``` toWords() ```
+#### How to use:
+```String translatedNumber = new NumTranslator(Language.RUS).translate(long number);```
 
 
 #### Example of using:
