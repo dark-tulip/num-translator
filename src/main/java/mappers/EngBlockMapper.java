@@ -33,15 +33,33 @@ public class EngBlockMapper implements IBlockMapper {
     put(9, "ninety");
   }};
 
+  private static final HashMap<Integer, String> decimalsInWordsForTens = new HashMap<>() {{
+    put(1, "eleven");
+    put(2, "twelve");
+    put(3, "thirteen");
+    put(4, "fourteen");
+    put(5, "fifteen");
+    put(6, "sixteen");
+    put(7, "seventeen");
+    put(8, "eighteen");
+    put(9, "nineteen");
+  }};
+
   private static final HashMap<Language, String> hundredBlockNameMapper = new HashMap<>() {{
     put(ENG, " hundred");
   }};
 
   public String unitToWordsMapper(ThreeDigitsBlock num) {
+    if (num.getDecimals() == 1) {
+      return " ";
+    }
     return unitToWordsEng.get(num.getUnits());
   }
 
   public String decimalToWordsMapper(ThreeDigitsBlock num) {
+    if (num.getNumber() % 100 >= 11 && num.getNumber() % 100 <= 19) {
+      return decimalsInWordsForTens.get(num.getUnits());
+    }
     return decimalsInWordsEng.get(num.getDecimals());
   }
 

@@ -51,11 +51,9 @@ public class RusBlockMapper implements IBlockMapper {
     // *1* - empty
     if (num.getDecimals() == 1) {
       return " ";
-
     } else if (num.getBlockPosition() == 1 && (num.getUnits() == 1 || num.getUnits() == 2)) {
       // женский род для блока тысячных, цифры одна, две --- единичный случай
       return unitToWordsRus.get(num.getUnits())[1];
-
     }
     return unitToWordsRus.get(num.getUnits())[0];
   }

@@ -24,6 +24,13 @@ public class Main {
     assertEquals(new NumTranslator(QAZ).translate(0), "nól");
     assertEquals(new NumTranslator(ENG).translate(0), "zero");
 
+    assertEquals(new NumTranslator(ENG).translate(9), "nine");
+    assertEquals(new NumTranslator(ENG).translate(10), "ten");
+    assertEquals(new NumTranslator(ENG).translate(20), "twenty");
+    assertEquals(new NumTranslator(ENG).translate(19), "nineteen");
+    assertEquals(new NumTranslator(ENG).translate(12), "twelve");
+    assertEquals(new NumTranslator(ENG).translate(111), "one hundred eleven");
+
     assertEquals(new NumTranslator(RUS).translate(999_999_999_999L), "девятьсот девяносто девять миллиардов девятьсот девяносто девять миллионов девятьсот девяносто девять тысяч девятьсот девяносто девять");
     assertEquals(new NumTranslator(KAZ).translate(999_999_999_999L), "тоғыз жүз тоқсан тоғыз миллиард тоғыз жүз тоқсан тоғыз миллион тоғыз жүз тоқсан тоғыз мың тоғыз жүз тоқсан тоғыз");
     assertEquals(new NumTranslator(QAZ).translate(999_999_999_999L), "toǵyz júz toqsan toǵyz mıllıard toǵyz júz toqsan toǵyz mıllıon toǵyz júz toqsan toǵyz myń toǵyz júz toqsan toǵyz");
@@ -46,6 +53,10 @@ public class Main {
     System.out.println(new NumTranslator(QAZ).translate(9_000_900_099L));
     System.out.println(new NumTranslator(KAZ).translate(9_000_900_099L));
     System.out.println(new NumTranslator(ENG).translate(9_000_900_099L));
+
+    System.out.println(new NumTranslator(RUS).translate(11));
+    System.out.println(new NumTranslator(RUS).translate(111));
+    System.out.println(new NumTranslator(RUS).translate(9));
 
     Scanner sc = new Scanner(System.in);
 
