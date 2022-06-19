@@ -27,11 +27,7 @@ public class NumTranslator {
     }
 
     String[] numberBlocks = splitByThreeDigits(number);
-    return getTranslatedString(numberBlocks, this.language);
 
-  }
-
-  private static String getTranslatedString(String[] numberBlocks, Language language) {
     List<String> result = new ArrayList<>();
 
     for (int i = 0; i < numberBlocks.length; i++) {
@@ -44,7 +40,9 @@ public class NumTranslator {
       }
     }
     return String.join(" ", result);
+
   }
+
 
   private String[] splitByThreeDigits(long number) {
     return NumberFormat

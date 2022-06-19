@@ -10,8 +10,6 @@ public class Main {
 
   public static void main(String[] args) {
 
-    System.out.println(new NumTranslator(RUS).translate(100));
-
     System.out.println("=== STARTED PROGRAM ===");
 
     assertEquals(new NumTranslator(KAZ).translate(123_123_120_100L), "бір жүз жиырма үш миллиард бір жүз жиырма үш миллион бір жүз жиырма мың бір жүз");
@@ -54,9 +52,10 @@ public class Main {
     System.out.println(new NumTranslator(KAZ).translate(9_000_900_099L));
     System.out.println(new NumTranslator(ENG).translate(9_000_900_099L));
 
+    System.out.println(new NumTranslator(RUS).translate(9));
     System.out.println(new NumTranslator(RUS).translate(11));
     System.out.println(new NumTranslator(RUS).translate(111));
-    System.out.println(new NumTranslator(RUS).translate(9));
+    System.out.println(new NumTranslator(RUS).translate(100));
 
     Scanner sc = new Scanner(System.in);
 
