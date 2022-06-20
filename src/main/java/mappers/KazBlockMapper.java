@@ -21,7 +21,6 @@ public class KazBlockMapper implements IBlockMapper {
     put(8, "сегіз");
     put(9, "тоғыз");
   }};
-
   private static final HashMap<Integer, String> decimalsInWordsKaz = new HashMap<>() {{
     put(1, "он");
     put(2, "жиырма");

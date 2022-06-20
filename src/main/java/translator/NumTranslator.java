@@ -34,8 +34,7 @@ public class NumTranslator {
       int threeDigits = Integer.parseInt(numberBlocks[i]);
 
       if (threeDigits > 0) {
-        int position = numberBlocks.length - i - 1;
-        ThreeDigitsBlock block = new ThreeDigitsBlock(threeDigits, language, position);
+        ThreeDigitsBlock block = new ThreeDigitsBlock(threeDigits, language, numberBlocks.length - i - 1);
         result.add(block.toWords());
       }
     }

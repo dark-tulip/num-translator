@@ -1,16 +1,20 @@
 import languages.Language;
+import org.assertj.core.api.Assertions;
 import translator.NumTranslator;
 
 import java.util.Scanner;
 
 import static languages.Language.*;
-import static org.junit.Assert.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class Main {
 
+  @SuppressWarnings("SpellCheckingInspection")
   public static void main(String[] args) {
 
     System.out.println("=== STARTED PROGRAM ===");
+
+    assertThat(new NumTranslator(KAZ).translate(123_123_120_100L)).isEqualTo("бір жүз жиырма үш миллиард бір жүз жиырма үш миллион бір жүз жиырма мың бір жүз");
 
     assertEquals(new NumTranslator(KAZ).translate(123_123_120_100L), "бір жүз жиырма үш миллиард бір жүз жиырма үш миллион бір жүз жиырма мың бір жүз");
     assertEquals(new NumTranslator(QAZ).translate(123_123_120_100L), "bir júz jıyrma úsh mıllıard bir júz jıyrma úsh mıllıon bir júz jıyrma myń bir júz");
