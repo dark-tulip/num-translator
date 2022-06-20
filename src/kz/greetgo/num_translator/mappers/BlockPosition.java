@@ -1,6 +1,6 @@
-package mappers;
+package kz.greetgo.num_translator.mappers;
 
-import languages.Language;
+import kz.greetgo.num_translator.languages.Language;
 
 import java.util.HashMap;
 

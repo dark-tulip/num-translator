@@ -1,7 +1,7 @@
-package translator;
+package kz.greetgo.num_translator.translator;
 
-import languages.Language;
-import mappers.ThreeDigitsBlock;
+import kz.greetgo.num_translator.languages.Language;
+import kz.greetgo.num_translator.mappers.ThreeDigitsBlock;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;

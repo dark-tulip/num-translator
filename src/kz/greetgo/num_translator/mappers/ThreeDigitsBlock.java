@@ -1,6 +1,6 @@
-package mappers;
+package kz.greetgo.num_translator.mappers;
 
-import languages.Language;
+import kz.greetgo.num_translator.languages.Language;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -18,16 +18,16 @@ public class ThreeDigitsBlock {
    */
   IBlockMapper mapper;
   BlockPosition blockPosition;
-  Language language;
+  Language      language;
 
   int hundreds;
   int decimals;
   int units;
 
   public ThreeDigitsBlock(int number, Language language, int position) {
-    this.hundreds = number / 100 > 0 ? number / 100 : 0;
-    this.decimals = number / 10 % 10 > 0 ? number / 10 % 10 : 0;
-    this.units = number % 10 > 0 ? number % 10 : 0;
+    this.hundreds = Math.max(number / 100, 0);
+    this.decimals = Math.max(number / 10 % 10, 0);
+    this.units = Math.max(number % 10, 0);
 
     this.language = language;
     this.blockPosition = new BlockPosition(position, language, number);

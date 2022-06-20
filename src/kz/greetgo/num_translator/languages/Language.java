@@ -1,4 +1,4 @@
-package languages;
+package kz.greetgo.num_translator.languages;
 
 /**
  * The list of supported languages

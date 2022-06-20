@@ -1,10 +1,8 @@
-package mappers;
+package kz.greetgo.num_translator.mappers;
 
-import languages.Language;
+import kz.greetgo.num_translator.languages.Language;
 
 import java.util.HashMap;
-
-import static languages.Language.*;
 
 public class QazBlockMapper implements IBlockMapper {
 
@@ -34,7 +32,7 @@ public class QazBlockMapper implements IBlockMapper {
   }};
 
   private static final HashMap<Language, String> hundredBlockNameMapper = new HashMap<>() {{
-    put(QAZ, " júz");
+    put(Language.QAZ, " júz");
   }};
 
 
@@ -47,7 +45,7 @@ public class QazBlockMapper implements IBlockMapper {
   }
 
   public String hundredToWordsMapper(ThreeDigitsBlock num) {
-    return unitToWordsQaz.get(num.getHundreds()) + hundredBlockNameMapper.get(QAZ);
+    return unitToWordsQaz.get(num.getHundreds()) + hundredBlockNameMapper.get(Language.QAZ);
   }
 
 

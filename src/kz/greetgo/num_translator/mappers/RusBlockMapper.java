@@ -1,4 +1,4 @@
-package mappers;
+package kz.greetgo.num_translator.mappers;
 
 import java.util.HashMap;
 
