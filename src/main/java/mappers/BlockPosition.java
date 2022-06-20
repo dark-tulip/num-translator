@@ -7,21 +7,21 @@ import java.util.HashMap;
 
 public class BlockPosition {
 
-  final static HashMap<Integer, String> thousandsDegreesKaz = new HashMap<>() {{
+  final static HashMap<Integer, String>   thousandsDegreesKaz = new HashMap<>() {{
     put(0, "");
     put(1, "мың");
     put(2, "миллион");
     put(3, "миллиард");
     put(4, "триллион");
   }};
-  final static HashMap<Integer, String> thousandsDegreesQaz = new HashMap<>() {{
+  final static HashMap<Integer, String>   thousandsDegreesQaz = new HashMap<>() {{
     put(0, "");
     put(1, "myń");
     put(2, "mıllıon");
     put(3, "mıllıard");
     put(4, "trıllıon");
   }};
-  final static HashMap<Integer, String> thousandsDegreesEng = new HashMap<>() {{
+  final static HashMap<Integer, String>   thousandsDegreesEng = new HashMap<>() {{
     put(0, "");
     put(1, "thousand");
     put(2, "million");
@@ -42,13 +42,13 @@ public class BlockPosition {
     put(4, new String[]{"триллион", "триллиона", "триллионов"});
   }};
 
-  int posNumber;
-  int threeDigits;
+  int      posNumber;
+  int      threeDigits;
   Language language;
 
   public BlockPosition(int posNumber, Language language, int threeDigits) {
-    this.posNumber = posNumber;
-    this.language = language;
+    this.posNumber   = posNumber;
+    this.language    = language;
     this.threeDigits = threeDigits;
   }
 

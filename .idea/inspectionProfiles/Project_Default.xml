@@ -1,0 +1,92 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CommentedOutCode" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="46">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="mat-icon" />
+            <item index="7" class="java.lang.String" itemvalue="ng-component" />
+            <item index="8" class="java.lang.String" itemvalue="app-action-buttons" />
+            <item index="9" class="java.lang.String" itemvalue="ui-link" />
+            <item index="10" class="java.lang.String" itemvalue="app-filter-field" />
+            <item index="11" class="java.lang.String" itemvalue="app-bo-attr-item" />
+            <item index="12" class="java.lang.String" itemvalue="app-bo-attr-grid" />
+            <item index="13" class="java.lang.String" itemvalue="ktd-grid-item" />
+            <item index="14" class="java.lang.String" itemvalue="app-mybpm-add-button" />
+            <item index="15" class="java.lang.String" itemvalue="ui-chip" />
+            <item index="16" class="java.lang.String" itemvalue="ui-radio" />
+            <item index="17" class="java.lang.String" itemvalue="nz-date-picker" />
+            <item index="18" class="java.lang.String" itemvalue="app-bo-instance-selector" />
+            <item index="19" class="java.lang.String" itemvalue="app-co-attr-item" />
+            <item index="20" class="java.lang.String" itemvalue="mat-checkbox" />
+            <item index="21" class="java.lang.String" itemvalue="app-kanban-card" />
+            <item index="22" class="java.lang.String" itemvalue="mat-sidenav-content" />
+            <item index="23" class="java.lang.String" itemvalue="app-fe-common" />
+            <item index="24" class="java.lang.String" itemvalue="popover-element-text" />
+            <item index="25" class="java.lang.String" itemvalue="ui-checkbox" />
+            <item index="26" class="java.lang.String" itemvalue="app-popover" />
+            <item index="27" class="java.lang.String" itemvalue="app-operation-tab-content" />
+            <item index="28" class="java.lang.String" itemvalue="app-co-settings-link" />
+            <item index="29" class="java.lang.String" itemvalue="mat-radio-button" />
+            <item index="30" class="java.lang.String" itemvalue="app-custom-checkbox" />
+            <item index="31" class="java.lang.String" itemvalue="app-numeration-count" />
+            <item index="32" class="java.lang.String" itemvalue="app-form-element" />
+            <item index="33" class="java.lang.String" itemvalue="type-selector-link" />
+            <item index="34" class="java.lang.String" itemvalue="app-widget-current-date" />
+            <item index="35" class="java.lang.String" itemvalue="app-bo-attr-group" />
+            <item index="36" class="java.lang.String" itemvalue="app-groups" />
+            <item index="37" class="java.lang.String" itemvalue="app-dff-label" />
+            <item index="38" class="java.lang.String" itemvalue="app-bo-settings-display" />
+            <item index="39" class="java.lang.String" itemvalue="app-dff-common" />
+            <item index="40" class="java.lang.String" itemvalue="app-bo-settings-param" />
+            <item index="41" class="java.lang.String" itemvalue="app-instance-count" />
+            <item index="42" class="java.lang.String" itemvalue="app-kanban-empty-card" />
+            <item index="43" class="java.lang.String" itemvalue="app-settings-print-form" />
+            <item index="44" class="java.lang.String" itemvalue="app-bo-record" />
+            <item index="45" class="java.lang.String" itemvalue="app-bo-structure-button" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HttpUrlsUsage" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="IgnoreResultOfCall" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="m_reportAllNonLibraryCalls" value="false" />
+      <option name="callCheckString" value="java.io.File,.*,java.io.InputStream,read|skip|available|markSupported,java.io.Reader,read|skip|ready|markSupported,java.lang.Boolean,.*,java.lang.Byte,.*,java.lang.Character,.*,java.lang.Double,.*,java.lang.Float,.*,java.lang.Integer,.*,java.lang.Long,.*,java.lang.Math,.*,java.lang.Object,equals|hashCode|toString,java.lang.Short,.*,java.lang.StrictMath,.*,java.lang.String,.*,java.lang.Thread,interrupted,java.math.BigInteger,.*,java.math.BigDecimal,.*,java.net.InetAddress,.*,java.net.URI,.*,java.nio.channels.AsynchronousChannelGroup,.*,java.util.Arrays,.*,java.util.List,of,java.util.Set,of,java.util.Map,of|ofEntries|entry,java.util.Collections,(?!addAll).*,java.util.UUID,.*,java.util.regex.Matcher,pattern|toMatchResult|start|end|group|groupCount|matches|find|lookingAt|quoteReplacement|replaceAll|replaceFirst|regionStart|regionEnd|hasTransparentBounds|hasAnchoringBounds|hitEnd|requireEnd,java.util.regex.Pattern,.*,java.util.concurrent.CountDownLatch,await|getCount,java.util.concurrent.ExecutorService,awaitTermination|isShutdown|isTerminated,java.util.concurrent.ForkJoinPool,awaitQuiescence,java.util.concurrent.Semaphore,tryAcquire|availablePermits|isFair|hasQueuedThreads|getQueueLength|getQueuedThreads,java.util.concurrent.locks.Condition,await|awaitNanos|awaitUntil,java.util.concurrent.locks.Lock,tryLock|newCondition,java.util.stream.BaseStream,.*,java.util.stream.Stream,.*,java.util.stream.DoubleStream,.*,java.util.stream.IntStream,.*,java.util.stream.LongStream,.*" />
+    </inspection_tool>
+    <inspection_tool class="IncorrectHttpHeaderInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="customHeaders">
+        <set>
+          <option value="token" />
+        </set>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="LoopStatementsThatDontLoop" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MagicConstant" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="MismatchedCollectionQueryUpdate" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="queryNames">
+        <value />
+      </option>
+      <option name="updateNames">
+        <value />
+      </option>
+      <option name="ignoredClasses">
+        <value />
+      </option>
+    </inspection_tool>
+    <inspection_tool class="NonAsciiCharacters" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RawUseOfParameterizedType" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ShellCheck" enabled="true" level="ERROR" enabled_by_default="true">
+      <shellcheck_settings value="SC2009" />
+    </inspection_tool>
+    <inspection_tool class="UnnecessaryContinue" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>
